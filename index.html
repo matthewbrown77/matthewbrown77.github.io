@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Portfolio website for developer Matthew Brown.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Brown</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0"
+    as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="public/favicon.ico">
+</head>
+
+<body>
+
+  <!-- Register service worker -->
+  <!-- <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js");
+    }
+  </script> -->
+
+  <!-- BEGIN NAVBAR -->
+  <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <!-- END NAVBAR -->
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="jumbotron">
+      <div class="jumbotron-text">
+        <h1>Matthew Brown</h1>
+        <p>Full-Stack Web Developer in Atlanta, GA.</p>
+      </div>
+      <div class="jumbotron-social">
+        <ul class="ul-social">
+          <li class="li-social-links">
+            <a class="social" href="https://github.com/matthewbrown77" target="_blank" rel="noopener"
+              aria-label="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li class="li-social-links">
+            <a class="social" href="https://linkedin.com/in/mbrown379" target="_blank" rel="noopener"
+              aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          <li class="li-social-links">
+            <a class="social" href="https://www.facebook.com/matthew.brown7788" target="_blank" rel="noopener"
+              aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li class="li-social-links">
+            <a class="social" href="https://twitter.com/matthewbrown778" target="_blank" rel="noopener"
+              aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div id="down-arrow">
+        <span><a href="#about" aria-label="Jump to about"><i class="fa fa-chevron-down fa-2x pulse"
+              aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- BEGIN ABOUT -->
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="about"></a>
+          <h2>About</h2>
+        </div>
+        <div class="content-body">
+          <p>My name is Matthew Brown and I'm a junior at the Georgia Institute of Technology. I am pursuing a Bachelor
+            of Science in Computer Science with concentrations in Artificial Intelligence and Computer Networking. I'm
+            interested in the unique intersection of technology and security and hope to use my technical skillset to
+            add value to a company. I am a team player who is always looking for new ways to grow as a leader.
+            Passionate about creating high-quality software that has a positive impact on the world around me.</p>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- BEGIN EXPERIENCE -->
+    <div class="row">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="experience"></a>
+          <h2 class="alt-header">Experience</h2>
+        </div>
+
+        <!-- CARD #1 -->
+        <div class="content-body">
+          <div class="card">
+            <div class="card-header">
+              <h3>Amazon <span class="job-title">SDE Intern</span></h3>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>Accepted an offer at Amazon for Summer 2021 as a Software Development Engineer Intern in Seattle,
+                  WA.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CARD #2 -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Savvy Dating App <span class="job-title">Backend Engineer</span></h3>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>Leading a full re-write of the existing codebase by switching to MongoDB and Mongoose for object
+                  modeling.</li>
+                <li>Attempting to improve the application’s performance and server response time to overcome previous
+                  bottleneck.</li>
+                <li>Working extensively with cloud architectures and AWS services such as EC2, RDS, and ELB.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CARD #3 -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Georgia Tech Research Institute <span class="job-title">Software Engineering Co-op</span></h3>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>Maintained a secure information system for the United States Department of Defense in the CIPHER
+                  lab.</li>
+                <li>Significantly reduced the project’s technical debt through numerous bug fixes and enhancements.</li>
+                <li>Gained expertise with enterprise-scale web applications, API design, and layered software
+                  architecture.</li>
+                <li>Practiced Agile methodologies as a member of an Agile Scrum development team.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CARD #4 -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Apptega <span class="job-title">Technology & Security Intern</span></h3>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>Implemented a logs pipeline from the flagship application to AWS cloud services such as S3 and
+                  CloudWatch.</li>
+                <li>Updated cybersecurity framework information in production database using MySQL Workbench.</li>
+                <li>Composed 40+ technical cybersecurity policy and procedure document templates for client use.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END EXPERIENCE -->
+
+    <!-- BEGIN EDUCATION -->
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="education"></a>
+          <h2>Education</h2>
+        </div>
+        <div class="content-body">
+
+          <!-- CARD #1 -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Georgia Institute of Technology <span class="job-title">August 2018 - December 2022 (Expected)</span>
+              </h3>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li>Bachelor of Science in Computer Science. GPA: 3.91/4.0</li>
+                <li>Concentrations: Artificial Intelligence and Computer Networks.</li>
+                <li>Activities: Beta Theta Pi Fraternity, Bits of Good, HackGT, Tech the Halls.</li>
+                <li>Relevant Coursework: Computer Organization & Programming, Intro to Object-Oriented Programming, Data
+                  Structures and Algos, Systems and Networks, Intro to AI, Statistics and Applications.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END EDUCATION -->
+
+    <!-- BEGIN PROJECTS -->
+    <div class="row">
+      <div class="side-content-sm"></div>
+      <div class="main-content-lg">
+        <div class="content-header">
+          <a class="anchor" name="projects"></a>
+          <h2 class="alt-header">Projects</h2>
+        </div>
+        <div class="content-body">
+          <!-- CARD #1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img class="bog-logo" src="public/bog-logo.png" height="150" width="150" alt="Logo for Bits of Good">
+            </div>
+            <div class="project-content">
+              <h3>Nonprofit General Solution</h3>
+              <p>A platform that connects volunteers and donors to non-profits both locally and nationally, and provides
+                the tools that enable non-profits to manage volunteer opportunities and track donations.</p>
+              <a href="https://bitsofgood.org/projects/general-solution" target="_blank" rel="noopener">Link</a>
+            </div>
+          </div>
+          <!-- CARD #2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img class="bgc-logo" src="public/bgc-logo.png" height="100" width="155"
+                alt="Logo for the Boys and Girl Clubs of America">
+            </div>
+            <div class="project-content">
+              <h3>Bus Safety Application</h3>
+              <p>A web application to assist the drivers, administration, and club directors of a local Boys and Girls
+                Club chapter in better handling the bus services and routes for the students in the club.</p>
+              <a href="https://bitsofgood.org/projects/bgc-safety/" target="_blank" rel="noopener">Link</a>
+            </div>
+          </div>
+          <!-- CARD #3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img class="auth0-logo" src="public/auth0-logo.png" height="100" width="100" alt="Logo for Auth0">
+            </div>
+            <div class="project-content auth0-content">
+              <h3>User Export Script</h3>
+              <p>A script to automate the preparation and delivery of Apptega's sensitive user login data using the
+                Auth0 API.</p>
+              <a href="https://github.com/matthewbrown77/auth0-user-export" target="_blank" rel="noopener">Link</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="side-content-sm"></div>
+    </div>
+    <!-- END PROJECTS -->
+
+    <!-- BEGIN SKILLS -->
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="skills"></a>
+          <h2>Skills</h2>
+        </div>
+        <div class="content-body">
+          <ul class="ul-skills">
+            <li class="li-skills">Java</li>
+            <li class="li-skills">JavaScript</li>
+            <li class="li-skills">TypeScript</li>
+            <li class="li-skills">C</li>
+            <li class="li-skills">Python</li>
+            <li class="li-skills">React</li>
+            <li class="li-skills">Next.js</li>
+            <li class="li-skills">Angular</li>
+            <li class="li-skills">HTML</li>
+            <li class="li-skills">CSS</li>
+            <li class="li-skills">Express</li>
+            <li class="li-skills">Node.js</li>
+            <li class="li-skills">MongoDB</li>
+            <li class="li-skills">SQL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END SKILLS -->
+
+    <!-- BEGIN CONTACT -->
+    <div class="row blue">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="contact"></a>
+          <h2 class="white-text">Contact Me</h2>
+        </div>
+        <div class="contact content-body">
+          <form method="POST" action="https://formspree.io/matthewbrown@gatech.edu">
+            <input type="hidden" name="_subject" value="Contact request from personal website"
+              aria-label="Dunno what this is tbh" />
+            <input type="email" name="_replyto" placeholder="Your email" required aria-label="Input box for your email">
+            <textarea name="message" placeholder="Your message" required
+              aria-label="Input box for your message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="row">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+        </div>
+        <div class="content-body">
+          <p>Copyright Matthew Brown 2020</p>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END FOOTER -->
+
+  </div>
+</body>
+
+</html>
