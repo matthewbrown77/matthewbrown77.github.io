@@ -20,11 +20,21 @@
 
   <!-- Register service worker -->
   <script>
-    // if ("serviceWorker" in navigator) {
-    //   window.addEventListener("load", () => {
-    //     navigator.serviceWorker.register("/service-worker.js");
-    //   });
-    // }
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js");
+      });
+    }
+  </script>
+
+  <!-- Progress bar -->
+  <script>
+    window.onscroll = () => {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+    }
   </script>
 
   <!-- BEGIN NAVBAR -->
@@ -35,6 +45,10 @@
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
   </div>
   <!-- END NAVBAR -->
 
