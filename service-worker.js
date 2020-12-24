@@ -5,5 +5,5 @@ workbox.routing.registerRoute(
         request.destination === 'style' ||
         request.destination === 'script' ||
         request.destination === 'worker',
-    new workbox.strategies.CacheFirst()
+    new workbox.strategies.NetworkFirst()
 );

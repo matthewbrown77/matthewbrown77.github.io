@@ -18,7 +18,7 @@ body {
   box-sizing: border-box
 }
 
-/*NAVBAR*/
+/* Nav */
 .navbar {
   background-color: #9752E0;;
   position: fixed; /* Set the navbar to fixed position */
@@ -42,7 +42,7 @@ body {
   visibility: hidden;
 }
 
-/*JUMBOTRON*/
+/* Jumbotron */
 .jumbotron {
   height: 100vh; /*height to 100% of view height*/
   background-color: #9752E0;; /*background color*/
@@ -52,7 +52,6 @@ body {
 }
 
 .jumbotron-text {
-  /*TAGLINE UNDER NAME*/
   font-weight: 400;
   font-size: 2em;
   color: white;
@@ -61,7 +60,6 @@ body {
 }
 
 .jumbotron-text h1 {
-  /*YOUR NAME*/
   text-transform: uppercase;
   font-weight: 800;
   font-size: 3em;
@@ -72,7 +70,7 @@ body {
   margin: 0;
 }
 
-/*SOCIAL LINKS*/
+/* Socials */
 .ul-social {
   text-align: center;
   padding-left: 0;
@@ -94,45 +92,8 @@ body {
   transform:scale(1.3);
 }
 
-/* Arrow pulse */
-.pulse {
-	display: inline-block;
-	-moz-animation: pulse 2s infinite linear;
-	-o-animation: pulse 2s infinite linear;
-	-webkit-animation: pulse 2s infinite linear;
-	animation: pulse 2s infinite linear;
-}
-
-@-webkit-keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@-moz-keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@-o-keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@-ms-keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-/*ARROW LINK*/
+/* Arrow */
 #down-arrow {
-  /*position: absolute;
-  width: 100%;*/
   margin-top: auto;
   text-align: center;
   margin-bottom: 50px;
@@ -142,9 +103,8 @@ body {
   color: white;
 }
 
-/*CONTENT*/
+/* Content */
 .container {
-  /*sets up flexbox*/
   display: flex;
   flex-direction: column;
 }
@@ -200,7 +160,7 @@ h2 {
   color: rgba(0,0,0,.75);
 }
 
-/*EDUCATION*/
+/* Education */
 .card {
   display: flex;
   flex-direction: column;
@@ -232,7 +192,7 @@ h3 {
   float: right;
 }
 
-/*PROJECTS*/
+/* Projects */
 .project-card {
   display: flex;
   flex-direction: row;
@@ -292,7 +252,7 @@ h3 {
   font-size: 1.2em;
 }
 
-/*CONTACT*/
+/* Contact */
 .blue {
   background: #9752E0;;
   text-align: center;
@@ -337,3 +297,63 @@ h3 {
   color: white;
 }
 
+/* ANIMATIONS */
+
+/* Arrow pulse */
+.pulse {
+	display: inline-block;
+	-moz-animation: pulse 2s infinite linear;
+	-o-animation: pulse 2s infinite linear;
+	-webkit-animation: pulse 2s infinite linear;
+	animation: pulse 2s infinite linear;
+}
+
+@-webkit-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-o-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-ms-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* Typewriter */
+.typewriter h1 {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3s steps(32, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 897.42px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
