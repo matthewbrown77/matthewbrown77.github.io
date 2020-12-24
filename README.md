@@ -26,10 +26,10 @@ $ npx serve
 Open https://localhost:5000 in your browser
 
 ## Contributing
-This project is still onstantly changing, so I won't go out of my way to open issues for newcomers just yet. Still, if any of my current issues peak your interest or you want to talk shop, feel free to [DM me on Twitter](https://twitter.com/mbrowndev) or use the contact form on the site.
+This project is still constantly changing, so I won't go out of my way to open issues for newcomers just yet. Still, if any of my current issues peak your interest or you want to talk shop, feel free to [DM me on Twitter](https://twitter.com/mbrowndev) or use the contact form on the site.
 
 ## Author
-:squirrel: **Matthew Brown**
+:shipit: **Matthew Brown**
 * Twitter: [@mbrowndev](https://twitter.com/mbrowndev)
 * Github: [@matthewbrown77](https://github.com/matthewbrown77)
 * LinkedIn: [@mbrown379](https://linkedin.com/in/mbrown379)
