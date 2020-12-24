@@ -5,22 +5,27 @@
   <meta charset="utf-8">
   <meta name="description" content="Portfolio website for developer Matthew Brown.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#9752E0">
   <title>Matthew Brown</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap"
     rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="public/favicon.ico">
+  <link rel="apple-touch-icon" href="public/favicon.ico">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
 
   <!-- Register service worker -->
-  <!-- <script>
+  <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/service-worker.js");
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js");
+      });
     }
-  </script> -->
+  </script>
 
   <!-- BEGIN NAVBAR -->
   <div class="navbar">
