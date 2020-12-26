@@ -236,6 +236,7 @@ h3 {
   display: block;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .project-content {
@@ -257,7 +258,14 @@ h3 {
 }
 
 .auth0-content {
-  margin-left: -375px;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 160px;
+  position: fixed;
 }
 
 /*SKILLS*/
